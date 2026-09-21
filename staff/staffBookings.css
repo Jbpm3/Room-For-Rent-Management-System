@@ -1,0 +1,319 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* HEADER STYLING */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    padding: 1.5rem 2.5rem; /* Use rem for padding */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGOUT BUTTON */
+.logout button {
+    padding: 0.75rem 1.5rem; /* Use rem for padding */
+    margin: 0 1rem; /* Use rem for margin */
+    color: #444;
+    background-color: #f4e1d2;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* MAIN CONTAINER */
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 92%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BUTTON CONTAINER */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* BUTTON STYLING */
+.button, .status-button, .task-button, .edit-button {
+    background-color: #f4e1d2;
+    color: #444;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bookings-button {
+    padding: 20px 40px;  /* Increased padding */
+    font-size: 22px;  /* Increased font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f4e1d2;
+    color: #444;
+    border-radius: 25px;  /* Larger border radius for a smoother button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bookings-button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.1);  /* Slightly bigger on hover */
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Button Hover Effect */
+.button:hover, .status-button:hover, .task-button:hover, .edit-button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* FULL VIEW TABLE */
+.full-view-container {
+    width: 100%;
+    margin-top: 40px;
+    padding: 38px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ROW CONTAINER */
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.row-container.header {
+    font-weight: bold;
+    font-style: italic;
+    background-color: #f4e1d2;
+}
+
+/* CELL STYLING */
+.cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* EDIT BUTTON */
+.edit-button {
+    padding: 5px 15px;
+    background-color: #f4e1d2;
+    color: #444;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* MODAL STYLING (Updated) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CLOSE BUTTON */
+.close {
+    cursor: pointer;
+    font-size: 20px;
+    color: #444;
+}
+
+/* BUTTON CONTAINER IN MODAL */
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f4e1d2;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* MODAL BUTTONS */
+.modal-content button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* TASK BUTTON */
+.task-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f4e1d2;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.task-button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON CONTAINER STYLES */
+.button-container, .modal-content {
+    display: flex;
+    justify-content: space-between; /* Ensures buttons are spaced evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures buttons stay aligned if space is tight */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    /* Adjust body padding and font size */
+    body {
+        padding: 10px;
+    }
+
+    /* Container adjustments */
+    .container {
+        width: 95%; /* Make the container slightly smaller */
+        padding: 20px; /* Reduce padding */
+    }
+
+    /* Header adjustments */
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    /* Button container adjustments */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    /* Full view container adjustments */
+    .full-view-container {
+        padding: 20px; /* Reduce padding */
+    }
+
+    /* Row container adjustments */
+    .row-container {
+        flex-direction: column; /* Stack cells vertically */
+        border-bottom: 1px solid black; /* Keep the border */
+    }
+
+    /* Cell adjustments */
+    .cell {
+        text-align: left; /* Align text to the left */
+        padding: 5px; /* Reduce padding */
+    }
+
+    /* Edit button adjustments */
+    .edit-button {
+        width: 100%; /* Make the button full width */
+        margin-top: 10px; /* Add some margin */
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        width: 90%; /* Make modal content responsive */
+        padding: 15px; /* Reduce padding */
+    }
+
+    /* Button adjustments in modal */
+    .modal-content button {
+        width: 100%; /* Make buttons full width */
+        margin: 5px 0; /* Add vertical margin */
+    }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .header {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .bookings-button {
+        font-size: 18px; /* Reduce font size */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .cell {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .modal-content {
+        padding: 10px; /* Further reduce padding */
+    }
+}
+

@@ -1,0 +1,85 @@
+/* BODY */
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding */
+}
+
+/* LOGO */
+.logo {
+    color: #333; /* Softer color for a subtle look */
+    margin: 0;
+    font-size: 2.5rem; /* Use rem for scalability */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+/* NAVIGATION BAR */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Use rem for padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Soft, transparent white */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px auto;
+    width: 100%; /* Full width */
+}
+
+/* NAV BUTTONS CONTAINER */
+.nav-buttons {
+    display: flex; /* Use flexbox for buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    padding: 10px 15px;
+    margin: 0 20px;
+    color: #444; /* Muted, elegant text color */
+}
+
+/* NAV BUTTONS */
+.nav-buttons button {
+    padding: 0.75rem 1.5rem; /* Use rem for padding */
+    margin: 0.5rem; /* Use rem for margin */
+    color: #444;
+    background-color: #f4e1d2; /* Muted pastel button background */
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* NAV BUTTONS HOVER */
+.nav-buttons button:hover {
+    background-color: #dfc2b0; /* Slightly darker pastel shade */
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+}
+
+/* LINK STYLING */
+a {
+    text-decoration: none;
+}
+
+/* LINK STYLING */
+a {
+    text-decoration: none;
+}

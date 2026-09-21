@@ -1,0 +1,97 @@
+/* Global box-sizing for predictability */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll if slight overflow */
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #555;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 15px; /* space inside container */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-wrap: break-word; /* prevent long words overflow */
+}
+
+/* NAVIGATION BAR */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap; /* Wrap children if needed */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem; /* reduced padding to avoid overflow */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* NAV BUTTONS CONTAINER */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 10px; /* spacing between buttons */
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+/* NAV BUTTONS */
+.nav-buttons button {
+    padding: 0.75rem 1rem;
+    margin: 0;
+    white-space: nowrap; /* Prevent breaking button text */
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 25px;
+    border: none;
+    color: #444;
+    background-color: #f4e1d2;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+.nav-buttons button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0,0,0,0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95vw;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
+    .nav-buttons {
+        justify-content: center;
+    }
+    .nav-buttons button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .logo {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}

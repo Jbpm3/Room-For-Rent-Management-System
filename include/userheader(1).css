@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logout button {
+    padding: 18px 20px;
+    margin: 0 15px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}

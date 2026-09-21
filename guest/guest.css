@@ -1,0 +1,117 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* LOGO STYLING */
+.logo {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem; 
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER STYLING */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    padding: 20px 5%; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGOUT BUTTON */
+.logout button {
+    padding: 1rem 1.5rem; 
+    margin: 0 1rem; 
+    color: #444;
+    background-color: #f4e1d2;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTAINER STYLING */
+.container {
+    margin: 50px auto;
+    width: 90%; 
+    max-width: 800px; 
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 5%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.button {
+    background-color: #f4e1d2;
+    color: #444;
+    padding: 1.5rem 2rem; /* Use rem for scalability */
+    border-radius: 15px;
+    font-size: 1.5rem; /* Use rem for scalability */
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: row; /* Keep buttons side by side on small screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .button {
+        padding: 1rem 1.5rem; /* Adjust padding for smaller screens */
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,235 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* HEADER STYLING */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGO STYLING */
+.logo {
+    color: #333;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGOUT BUTTON */
+.logout button {
+    padding: 15px 25px;
+    margin: 0 15px;
+    color: #444;
+    background-color: #f4e1d2;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* MAIN CONTAINER */
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 92%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BUTTON CONTAINER */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* BUTTON STYLING */
+.button {
+    background-color: #f4e1d2;
+    color: #444;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* SLIDESHOW CONTAINER */
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* SLIDES */
+.slides {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.slide {
+    text-align: center;
+    flex: 1;
+}
+
+/* IMAGE STYLING */
+img {
+    width: 800px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* SLIDESHOW BUTTONS */
+.prev, .next {
+    background: #f4e1d2;
+    color: #444;
+    border: none;
+    padding: 15px; /* Reduced padding for closer buttons */
+    cursor: pointer;
+    font-size: 25px; /* Slightly larger text for better readability */
+    border-radius: 50%;
+    transition: 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Make the buttons absolutely positioned */
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 10; /* Ensure the buttons are above the image */
+}
+
+.prev {
+    left: 10px; /* Move the "prev" button to the left side */
+}
+
+.next {
+    right: 10px; /* Move the "next" button to the right side */
+}
+
+.prev:hover, .next:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.1);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ROOM DETAILS */
+.roomNumber {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+}
+
+.pending-payment, .paid-status {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        font-size: 24px;
+        padding: 15px 30px;
+    }
+
+    .img-container {
+        margin-top: 20px;
+    }
+
+    /* Image resizing for smaller screens */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .roomNumber {
+        font-size: 20px;
+    }
+
+    .pending-payment, .paid-status {
+        font-size: 16px;
+    }
+}

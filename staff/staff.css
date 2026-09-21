@@ -1,0 +1,124 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* LOGO STYLING */
+.logo {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem; /* Use rem for better scalability */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER STYLING */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    padding: 1.5rem 2.5rem; /* Use rem for padding */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGOUT BUTTON */
+.logout button {
+    padding: 0.75rem 1.5rem; /* Use rem for padding */
+    margin: 0 1rem; /* Use rem for margin */
+    color: #444;
+    background-color: #f4e1d2;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTAINER STYLING */
+.container {
+    margin: 50px auto;
+    width: 95%; /* Use percentage for responsiveness */
+    max-width: 1200px; /* Set a max width for larger screens */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 2rem; /* Use rem for padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    gap: 2rem; /* Use rem for spacing */
+}
+
+.button {
+    background-color: #f4e1d2;
+    color: #444;
+    padding: 2rem 3rem; /* Use rem for padding */
+    border-radius: 15px;
+    font-size: 1.5rem; /* Use rem for font size */
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem; /* Smaller logo font size for mobile */
+    }
+
+    .header {
+        padding: 1rem; /* Less padding for mobile */
+    }
+
+    .logout button {
+        padding: 0.5rem 1rem; /* Smaller button padding for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .container {
+        padding: 1rem; /* Less padding for mobile */
+    }
+
+    .button {
+        font-size: 1.2rem; /* Smaller button font size for mobile */
+        padding: 1.5rem 2rem; /* Smaller button padding for mobile */
+    }}

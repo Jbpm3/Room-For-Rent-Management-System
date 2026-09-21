@@ -1,0 +1,109 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding */
+}
+
+/* LOGO STYLING */
+.logo {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem; /* Use rem for scalability */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER STYLING */
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    padding: 20px; /* Adjust padding */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGIN PART STYLING */
+.login-part {
+    text-align: center;
+    width: 90%; /* Use percentage for flexibility */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-part h2 {
+    font-size: 2rem; /* Use rem for scalability */
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 90%; /* Use percentage for flexibility */
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #dfc2b0;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* BUTTON STYLING */
+button {
+    padding: 12px 24px;
+    margin-top: 10px;
+    border: none;
+    background-color: #f4e1d2;
+    color: #444;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #dfc2b0;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* PARAGRAPH STYLING */
+p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}

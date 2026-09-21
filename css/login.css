@@ -1,0 +1,110 @@
+/* BODY */
+body {
+    margin: 0;
+    background-image: url(../include/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #555; /* Soft gray for text */
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding */
+}
+
+/* LOGO */
+.logo {
+    color: #333; /* Softer color for a subtle look */
+    margin: 0;
+    font-size: 2.5rem; /* Use rem for scalability */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    padding: 20px; /* Adjust padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent soft white */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto;
+    max-width: 90%; /* Keep it centered and not too wide */
+}
+
+/* LOGIN PART */
+.login-part {
+    text-align: center;
+    width: 90%; /* Use percentage for flexibility */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgba(200, 200, 200, 0.6); /* Softer border */
+    background-color: rgba(255, 255, 255, 0.8); /* Soft transparent white */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* LOGIN HEADING */
+.login-part h2 {
+    font-size: 1.5rem; /* Use rem for scalability */
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* REGISTER LINK */
+.register a {
+    text-decoration: underline;
+    color: #444; /* Softer black */
+}
+
+/* FORM ELEMENTS */
+input {
+    width: 90%; /* Use percentage for flexibility */
+    height: 40px; /* Increased for better usability */
+    margin: 8px 0;
+    padding: 5px;
+    border: 1px solid rgba(200, 200, 200, 0.8); /* Softer border */
+    background-color: #f4e1d2; /* Soft pastel background */
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #dfc2b0; /* Subtle highlight */
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid rgba(200, 200, 200, 0.8); /* Softer border */
+    background-color: #f4e1d2; /* Pastel shade */
+    color: #444;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background-color: #dfc2b0; /* Slightly darker pastel */
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+}
+
+a{
+    text-decoration: none;
+}
